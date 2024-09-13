@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  width: 272px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.qrcode {
+  border-radius: 8px;
+  height: 240px;
+  width: 240px;
+  margin: 16px 16px 0 16px;;
+}
+
+.text {
+  padding: 0 24px 16px 24px;
+}
+
+p {
+  font-family: outfit;
+  text-align: center;
+}
+
+p#title {
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  font-size: 18px;
+}
+
+p#subtext {
+  font-weight: 400;
+  color: hsl(216, 15%, 48%);
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+	<img class="qrcode" src="D:\frontend_mentor_projects\git_projects\qr_code_component_solution\images\image-qr-code.png" />
+	<div class="text">
+	  <p id="title">Improve your front-end skills by building projects</p>
+	  <p id="subtext">Scan the QR code to visit Frontend Mentor and take your coding skills to next level</p>
+	</div>
+  </div>
+</div>
+	
+</body>
+</html>
