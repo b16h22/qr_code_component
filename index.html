@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>QR Code component</title>
 <style>
 body {
   margin: 0;
@@ -11,7 +12,7 @@ body {
 .card {
   background-color: white;
   border-radius: 16px;
-  width: 272px;
+  width: 252px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,8 +21,8 @@ body {
 
 .qrcode {
   border-radius: 8px;
-  height: 240px;
-  width: 240px;
+  height: 220px;
+  width: 220px;
   margin: 16px 16px 0 16px;;
 }
 
@@ -37,7 +38,7 @@ p {
 p#title {
   font-weight: 700;
   color: hsl(218, 44%, 22%);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 p#subtext {
@@ -57,7 +58,7 @@ p#subtext {
 
 <div class="container">
   <div class="card">
-	<img class="qrcode" src="images/image-qr-code.png" />
+	<img class="qrcode" src="images/image-qr-code.png" alt="QR Code"/>
 	<div class="text">
 	  <p id="title">Improve your front-end skills by building projects</p>
 	  <p id="subtext">Scan the QR code to visit Frontend Mentor and take your coding skills to next level</p>
