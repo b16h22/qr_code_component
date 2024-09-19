@@ -33,15 +33,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-I learned how to center a <div> element horizontally and vertically without providing hard values for padding or margin, with the help CSS position and transform property. I was able to achieve a responsive layout that took care of the margins around the card layout automatically according to the screen size.
+I learned how to center a <div> element horizontally and vertically without providing hard values for padding or margin, with the help CSS flexbox. Initially I was using CSS position and transform property to achieve this but flexbox is a much cleaner solution.
 
 ```css
-.card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 ```
 
 ### Useful resources
