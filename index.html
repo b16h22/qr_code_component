@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>QR Code component</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<title>Frontend Mentor | QR Code component</title>
+
 <style>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: hsl(212, 45%, 89%);
-}
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+  }
 
-.card {
-  background-color: white;
-  border-radius: 16px;
-  width: 232px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
-.qrcode {
-  border-radius: 8px;
-  height: 200px;
-  width: 200px;
-  margin: 16px 16px 0 16px;;
-}
+  .card {
+    background-color: white;
+    border-radius: 16px;
+  }
 
-.text {
-  padding: 0 24px 16px 24px;
-}
+  .qrcode {
+    border-radius: 8px;
+    width: 252px;
+    margin: 16px 16px 0 16px;;
+  }
 
-p {
-  font-family: outfit;
-  text-align: center;
-}
+  .text {
+    padding: 0 24px 16px 24px;
+    width: 232px;
+  }
 
-p#title {
-  font-weight: 700;
-  color: hsl(218, 44%, 22%);
-  font-size: 16px;
-}
+  p {
+    font-family: outfit;
+    text-align: center;
+  }
 
-p#subtext {
-  font-weight: 400;
-  color: hsl(216, 15%, 48%);
-  font-size: 12px;
-}
+  p#title {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    font-size: 20px;
+  }
 
-@font-face {
-  font-family: outfit;
-  src: url(https://fonts.google.com/specimen/Outfit);
-}
+  p#subtext {
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+    font-size: 14px;
+  }
+
+  @font-face {
+    font-family: outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+  }
 
 </style>
 </head>
@@ -58,11 +65,11 @@ p#subtext {
 
 <div class="container">
   <div class="card">
-	<img class="qrcode" src="images/image-qr-code.png" alt="QR Code"/>
-	<div class="text">
-	  <p id="title">Improve your front-end skills by building projects</p>
-	  <p id="subtext">Scan the QR code to visit Frontend Mentor and take your coding skills to next level</p>
-	</div>
+	  <img class="qrcode" src="images/image-qr-code.png" alt="QR Code"/>
+	  <div class="text">
+	    <p id="title">Improve your front-end skills by building projects</p>
+	    <p id="subtext">Scan the QR code to visit Frontend Mentor and take your coding skills to next level</p>
+	  </div>
   </div>
 </div>
 	
